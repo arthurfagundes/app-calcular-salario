@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalarioActivity">
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="CALCULADORA DE SALÁRIO"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/txttitulo"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Digite seu salário atual:" />
+
+    <EditText
+        android:id="@+id/edtsalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/txt1"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtsalario"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Qual seu percentual de aumento?" />
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2" >
+            <RadioButton
+                android:id="@+id/rdbt30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="30%"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:id="@+id/rdbt45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="45%"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:id="@+id/rdbt50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="50%"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:id="@+id/rdbt75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="75%"
+                android:textSize="17dp"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btcalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup1"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/roundedbuttons"
+        android:text="CALCULAR NOVO SALÁRIO"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+
+
+
+
